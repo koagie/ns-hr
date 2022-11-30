@@ -8,4 +8,8 @@ use Illuminate\Database\Eloquent\Model;
 class Product extends Model
 {
     use HasFactory;
+    // name,detailをホワイトリスト化
+    protected $fillable = [
+        'name', 'detail'
+    ];
 }
